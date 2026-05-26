@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMP — Эксклюзивные сайты на чистом коде</title>
+<meta name="description" content="AMP — студия веб-разработки. Эксклюзивные сайты на чистом коде: скорость загрузки менее 1 секунды и уникальный премиум-дизайн.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="dust"></canvas>
+
+<!-- header -->
+<header id="header">
+  <div class="wrap nav">
+    <a href="#hero" class="logo">
+      <span class="mark"><img src="logo.png" alt="AMP"></span>
+      <span>AMP</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Главная</a></li>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#process">Преимущества</a></li>
+      <li><a href="#why">О нас</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-ghost">Контакты</a>
+      <a href="#contact" class="btn btn-gold">Обсудить проект</a>
+      <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</header>
+
+<!-- hero -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+    <div class="grid-tex"></div>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-left">
+      <span class="eyebrow"><span class="dot"></span>Студия веб-разработки AMP</span>
+      <h1>
+        <span class="ln">Инженерия</span>
+        <span class="ln shine">цифрового</span>
+        <span class="ln gold-text">превосходства</span>
+      </h1>
+      <p class="hero-sub">
+        Мы создаём эксклюзивные сайты на чистом коде:
+        скорость загрузки <b>&lt; 1 секунды</b> и уникальный премиум-дизайн.
+        Превратите сайт в прибыльный актив.
+      </p>
+      <p class="pain">
+        Шаблонный дизайн и медленный код делают бизнес «невидимкой»,
+        сливая до 50% рекламного бюджета впустую.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-gold">Обсудить проект <span class="arr">→</span></a>
+        <button class="btn btn-ghost" onclick="openGuide()">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+          Получить гайд
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="num gold-text">&lt;1с</div>
+          <div class="lbl">Скорость загрузки</div>
+        </div>
+        <div class="stat">
+          <div class="num gold-text">100<span style="font-size:18px">/100</span></div>
+          <div class="lbl">Оценка PageSpeed</div>
+        </div>
+        <div class="stat">
+          <div class="num gold-text">0%</div>
+          <div class="lbl">Шаблонов и конструкторов</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="orbit">
+        <div class="ring r1 spin"></div>
+        <div class="ring r2 spin-r"></div>
+        <div class="ring r3 spin"></div>
+        <div class="beam" style="transform:translateX(-50%) rotate(0deg)"></div>
+        <div class="beam" style="transform:translateX(-50%) rotate(130deg)"></div>
+        <div class="beam" style="transform:translateX(-50%) rotate(230deg)"></div>
+        <div class="orbit-core"><img src="logo.png" alt="AMP"></div>
+        <div class="node n1"><span class="ic"></span>Speed</div>
+        <div class="node n2"><span class="ic"></span>Control</div>
+        <div class="node n3"><span class="ic"></span>Growth</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- why me -->
+<section class="why sec-pad" id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Почему мы</span>
+      <h2>Золотой стандарт <span class="gold-text">веб-разработки</span></h2>
+      <p>Пока другие собирают сайты на конструкторах — мы отливаем ваш продукт
+        в чистом коде. Каждый проект — это IT-актив, а не просто страница в сети.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        </div>
+        <h3>Скорость как преимущество</h3>
+        <p>Лёгкий чистый код, который «летает» на любых устройствах. Меньше
+          секунды на загрузку — больше конверсий и меньше отказов.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Авторский дизайн</h3>
+        <p>Никаких шаблонов — только уникальная графика, которая выделяет вас
+          на рынке и влюбляет пользователя в ваш бренд.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+        </div>
+        <h3>Сайт как актив</h3>
+        <p>Передаём вам все ключи от готового продукта. Вы получаете
+          независимый IT-актив, готовый к SEO и рекламным нагрузкам.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- servicces -->
+<section class="sec-pad" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Услуги</span>
+      <h2>Три направления <span class="gold-text">для вашего роста</span></h2>
+      <p>Полный цикл: от идеи и проектирования до запуска готового продукта
+        и его дальнейшего сопровождения.</p>
+    </div>
+    <div class="svc-grid">
+
+      <!-- card 1 -->
+      <div class="svc-card featured reveal">
+        <div class="svc-glow"></div>
+        <div class="svc-top">
+          <div class="svc-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3z"/><path d="M3 9h18"/><circle cx="6.5" cy="7" r=".6" fill="currentColor"/></svg>
+          </div>
+          <span class="svc-num">01</span>
+        </div>
+        <h3>Разработка сайта</h3>
+        <p class="svc-desc">Эксклюзивный сайт на чистом коде под ключ —
+          от прототипа до запуска.</p>
+        <ul class="svc-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Проектирование и ТЗ</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Индивидуальный UI/UX дизайн</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Frontend-разработка (вёрстка)</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Базовая техническая SEO-оптимизация</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Настройка форм и аналитики</li>
+        </ul>
+        <div class="svc-foot">
+          <span class="label">Под ключ</span>
+          <a href="#contact" class="svc-link">Обсудить →</a>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="svc-card reveal">
+        <div class="svc-glow"></div>
+        <div class="svc-top">
+          <div class="svc-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="11" rx="2"/><path d="M12 7V4M9 12h.01M15 12h.01M3 11v3M21 11v3"/></svg>
+          </div>
+          <span class="svc-num">02</span>
+        </div>
+        <h3>Разработка бота</h3>
+        <p class="svc-desc">Telegram-бот и сложные интеграции,
+          которые автоматизируют бизнес.</p>
+        <ul class="svc-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Telegram-бот для бизнеса</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Интеграция Headless CMS (админка)</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Интеграция CRM (AmoCRM / Bitrix24)</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Сложная анимация и 3D (WebGL)</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Копирайтинг и контент</li>
+        </ul>
+        <div class="extra">
+          <b style="color:var(--text)">Техническая поддержка:</b>
+          хостинг, мелкие правки кода, бэкапы.
+        </div>
+        <div class="svc-foot" style="margin-top:14px">
+          <span class="label">Автоматизация</span>
+          <a href="#contact" class="svc-link">Обсудить →</a>
+        </div>
+      </div>
+
+      <!-- card 3 -->
+      <div class="svc-card reveal">
+        <div class="svc-glow"></div>
+        <div class="svc-top">
+          <div class="svc-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="6.5" cy="11.5" r="2.5"/><circle cx="17" cy="14" r="2.5"/><path d="M8 18a4 4 0 008 0"/></svg>
+          </div>
+          <span class="svc-num">03</span>
+        </div>
+        <h3>Дизайн</h3>
+        <p class="svc-desc">Графика для бренда и маркетплейсов —
+          от логотипа до контента.</p>
+        <ul class="svc-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Оформление карточек для маркетплейсов</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Посты для социальных сетей</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Дизайн и редизайн логотипов</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Визитки, листовки, баннеры</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Создание обложек к видео</li>
+        </ul>
+        <div class="svc-foot">
+          <span class="label">Брендинг</span>
+          <a href="#contact" class="svc-link">Обсудить →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- price -->
+    <div class="price-strip reveal">
+      <div class="ps-glow"></div>
+      <div style="position:relative">
+        <h3>Получите подробный прайс по всем услугам</h3>
+        <p>Полный список цен на разработку, ботов и дизайн — без скрытых
+          платежей. Жмите кнопку и забирайте.</p>
+      </div>
+      <button class="btn btn-gold" onclick="openPrice()" style="position:relative">
+        Получить прайс <span class="arr">→</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- process -->
+<section class="process sec-pad" id="process">
+  <div class="wrap proc-wrap">
+    <div class="proc-side reveal">
+      <span class="sec-tag">Преимущества</span>
+      <h2 style="font-size:clamp(28px,3.2vw,40px)">Как мы превращаем
+        идею в <span class="gold-text">прибыльный актив</span></h2>
+      <p style="color:var(--muted);margin-top:14px;font-size:15.5px">
+        Прозрачный процесс из 5 этапов. Вы понимаете, что происходит
+        на каждом шаге — ещё до начала кодинга.</p>
+      <div class="badge">🎁 Жми кнопку и получи <b>месяц поддержки бесплатно</b></div>
+      <a href="#contact" class="btn btn-gold" style="margin-top:20px">
+        Записаться на консультацию <span class="arr">→</span>
+      </a>
+    </div>
+    <div class="proc-steps">
+      <div class="proc-step reveal">
+        <div class="proc-num">01</div>
+        <div>
+          <h3>Аналитика и стратегия</h3>
+          <p>Погружаемся в ваш бизнес, изучаем конкурентов и ЦА. Результат —
+            концепция сайта, которая реально продаёт, а не просто «висит» в сети.</p>
+        </div>
+      </div>
+      <div class="proc-step reveal">
+        <div class="proc-num">02</div>
+        <div>
+          <h3>Проектирование и ТЗ</h3>
+          <p>Создаём фундамент: кликабельный прототип (скелет сайта) и детальное
+            техническое задание. Вы точно знаете, как работает каждая кнопка.</p>
+        </div>
+      </div>
+      <div class="proc-step reveal">
+        <div class="proc-num">03</div>
+        <div>
+          <h3>Эксклюзивный дизайн (UX/UI)</h3>
+          <p>Рисуем интерфейс, который выделяет вас на рынке. Никаких шаблонов —
+            только авторская графика, влюбляющая пользователя в ваш бренд.</p>
+        </div>
+      </div>
+      <div class="proc-step reveal">
+        <div class="proc-num">04</div>
+        <div>
+          <h3>Чистый код (разработка)</h3>
+          <p>Превращаем макеты в живой продукт. Пишем чистый, лёгкий код,
+            который «летает» на любых устройствах и готов к SEO-нагрузкам.</p>
+        </div>
+      </div>
+      <div class="proc-step reveal">
+        <div class="proc-num">05</div>
+        <div>
+          <h3>Тестирование и запуск</h3>
+          <p>Проверяем сайт на ошибки, скорость и адаптивность. Переносим
+            на хостинг и передаём вам все ключи от нового IT-актива.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="final">
+  <div class="fglow"></div>
+  <div class="wrap final-inner reveal">
+    <span class="sec-tag">Финальный шаг</span>
+    <h2>Готовы создать <span class="gold-text">независимый IT-актив?</span></h2>
+    <p>Жмите кнопку — и мы бесплатно проконсультируем вас по проекту,
+      покажем примеры работ и рассчитаем стоимость.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-gold">Бесплатная консультация <span class="arr">→</span></a>
+      <button class="btn btn-ghost" onclick="openGuide()">Получить гайд</button>
+    </div>
+  </div>
+</section>
+
+<!-- contact -->
+<section class="contact sec-pad" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <span class="sec-tag">Контакты</span>
+      <h2>Обсудим <span class="gold-text">ваш проект</span></h2>
+      <p>Оставьте заявку — ответим в течение рабочего дня, зададим уточняющие
+        вопросы и предложим решение под вашу задачу.</p>
+      <ul class="contact-list">
+        <li>
+          <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></div>
+          <div><div class="lbl">Telegram</div><div class="val">@amp_studio</div></div>
+        </li>
+        <li>
+          <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg></div>
+          <div><div class="lbl">Email</div><div class="val">hello@amp-studio.ru</div></div>
+        </li>
+        <li>
+          <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c1 .3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg></div>
+          <div><div class="lbl">Телефон</div><div class="val">+7 (900) 000-00-00</div></div>
+        </li>
+      </ul>
+    </div>
+    <div class="form-card reveal">
+      <div class="fc-glow"></div>
+      <h3>Оставить заявку</h3>
+      <p class="fc-sub">Расскажите о задаче — мы вернёмся с предложением.</p>
+      <div class="field">
+        <label>Ваше имя</label>
+        <input type="text" id="cName" placeholder="Как к вам обращаться">
+      </div>
+      <div class="field">
+        <label>Контакт для связи</label>
+        <input type="text" id="cContact" placeholder="Telegram, телефон или e-mail">
+      </div>
+      <div class="field">
+        <label>Что нужно сделать</label>
+        <select id="cType">
+          <option>Разработка сайта</option>
+          <option>Разработка бота</option>
+          <option>Дизайн</option>
+          <option>Пока не определился</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Комментарий</label>
+        <textarea id="cMsg" placeholder="Кратко о проекте и задачах"></textarea>
+      </div>
+      <button class="btn btn-gold" onclick="submitContact()">
+        Отправить заявку <span class="arr">→</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- price -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#hero" class="logo"><span class="mark"><img src="logo.png" alt="AMP"></span><span>AMP</span></a>
+        <p>Студия веб-разработки. Эксклюзивные сайты на чистом коде —
+          скорость, контроль, рост вашего бизнеса.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Услуги</h4>
+        <a href="#services">Разработка сайта</a>
+        <a href="#services">Разработка бота</a>
+        <a href="#services">Дизайн</a>
+        <a href="#services">Техническая поддержка</a>
+      </div>
+      <div class="foot-col">
+        <h4>Студия</h4>
+        <a href="#why">О нас</a>
+        <a href="#process">Процесс работы</a>
+        <a href="#contact">Контакты</a>
+        <a href="#" onclick="openGuide();return false">Гайд по ТЗ</a>
+      </div>
+      <div class="foot-col">
+        <h4>Связь</h4>
+        <a href="#">@amp_studio</a>
+        <a href="#">hello@amp-studio.ru</a>
+        <a href="#">+7 (900) 000-00-00</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 AMP Studio. Speed · Control · Growth.</p>
+      <div class="foot-soc">
+        <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></a>
+        <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== MODAL: GUIDE ===== -->
+<div class="modal-ov" id="modalGuide">
+  <div class="modal">
+    <div class="m-glow"></div>
+    <button class="modal-close" onclick="closeModal('modalGuide')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="modal-ic">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M9 8h7M9 12h7"/></svg>
+    </div>
+    <h3>Гайд: как составить ТЗ</h3>
+    <p>«Как составить ТЗ, чтобы не переплатить разработчикам лишнего».
+      Оставьте контакт — пришлём гайд в течение пары минут.</p>
+    <div class="field">
+      <label>Ваше имя</label>
+      <input type="text" id="gName" placeholder="Как к вам обращаться">
+    </div>
+    <div class="field">
+      <label>Telegram или e-mail</label>
+      <input type="text" id="gContact" placeholder="Куда прислать гайд">
+    </div>
+    <button class="btn btn-gold" onclick="getGuide()">
+      Получить гайд <span class="arr">→</span>
+    </button>
+    <p class="modal-mini">Без спама. Только полезные материалы.</p>
+  </div>
+</div>
+
+<!-- ===== MODAL: THANK YOU + OFFER (funnel step) ===== -->
+<div class="modal-ov" id="modalThanks">
+  <div class="modal">
+    <div class="m-glow"></div>
+    <button class="modal-close" onclick="closeModal('modalThanks')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="modal-ic">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+    <h3>Спасибо! Гайд уже в пути</h3>
+    <p>Проверьте указанный контакт — мы отправили гайд.
+      А пока — специальное предложение лично для вас:</p>
+    <div class="offer-box">
+      <div class="o-tag">Спецпредложение</div>
+      <div class="o-price gold-text">5 000 ₽</div>
+      <div class="o-desc">Составим детальное техническое задание для вашего
+        сайта. С готовым ТЗ можно пойти к любым разработчикам — и точно
+        знать, за что вы платите.</div>
+    </div>
+    <button class="btn btn-gold" onclick="acceptOffer()">
+      Заказать ТЗ за 5 000 ₽ <span class="arr">→</span>
+    </button>
+    <div class="modal-divider"></div>
+    <button class="btn btn-ghost" style="width:100%;justify-content:center"
+      onclick="closeModal('modalThanks')">Мне пока только гайд</button>
+  </div>
+</div>
+
+<!-- ===== MODAL: PRICE ===== -->
+<div class="modal-ov" id="modalPrice">
+  <div class="modal">
+    <div class="m-glow"></div>
+    <button class="modal-close" onclick="closeModal('modalPrice')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="modal-ic">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l9-4 9 4v6c0 5-4 9-9 11-5-2-9-6-9-11V6z"/><path d="M12 8v5M9.5 10.5h5"/></svg>
+    </div>
+    <h3>Подробный прайс по услугам</h3>
+    <p>Пришлём полный прайс с ценами на разработку сайтов, ботов и дизайн.
+      Оставьте контакт для связи.</p>
+    <div class="field">
+      <label>Ваше имя</label>
+      <input type="text" id="pName" placeholder="Как к вам обращаться">
+    </div>
+    <div class="field">
+      <label>Telegram или e-mail</label>
+      <input type="text" id="pContact" placeholder="Куда прислать прайс">
+    </div>
+    <button class="btn btn-gold" onclick="getPrice()">
+      Получить прайс <span class="arr">→</span>
+    </button>
+    <p class="modal-mini">Прозрачные цены — без скрытых платежей.</p>
+  </div>
+</div>
+
+<!-- ===== MODAL: SUCCESS (generic) ===== -->
+<div class="modal-ov" id="modalDone">
+  <div class="modal" style="text-align:center">
+    <div class="m-glow"></div>
+    <button class="modal-close" onclick="closeModal('modalDone')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="modal-ic" style="margin:0 auto 20px">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+    <h3 id="doneTitle">Заявка отправлена</h3>
+    <p id="doneText">Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+    <button class="btn btn-gold" style="width:100%;justify-content:center"
+      onclick="closeModal('modalDone')">Отлично</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
