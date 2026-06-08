@@ -273,6 +273,7 @@ header.scrolled{
   -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
   -webkit-mask-composite:xor;mask-composite:exclude;
   opacity:0;transition:.45s;
+  pointer-events:none;
 }
 .svc-card:hover{transform:translateY(-8px);background:var(--panel-2)}
 .svc-card:hover::before{opacity:1}
@@ -282,6 +283,7 @@ header.scrolled{
   position:absolute;width:220px;height:220px;border-radius:50%;
   background:rgba(202,162,74,.14);filter:blur(70px);
   top:-90px;right:-70px;opacity:0;transition:.5s;
+  pointer-events:none;
 }
 .svc-card:hover .svc-glow{opacity:1}
 .svc-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
