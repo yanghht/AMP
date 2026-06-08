@@ -53,7 +53,7 @@ function acceptOffer(){
   closeModal('modalThanks');
   document.getElementById('doneTitle').textContent='Заявка на ТЗ принята';
   document.getElementById('doneText').textContent=
-    'Отлично! Мы свяжемся с вами, чтобы оформить заказ ТЗ за 5 000 ₽ и уточнить детали проекта.';
+    'Отлично! Мы свяжемся с вами, чтобы оформить заказ ТЗ за 4 999 ₽ и уточнить детали проекта.';
   setTimeout(()=>openModal('modalDone'),260);
 }
 

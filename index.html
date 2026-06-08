@@ -14,7 +14,7 @@
 
 <canvas id="dust"></canvas>
 
-<!-- header -->
+<!-- ===== HEADER ===== -->
 <header id="header">
   <div class="wrap nav">
     <a href="#hero" class="logo">
@@ -36,7 +36,7 @@
   </div>
 </header>
 
-<!-- hero -->
+<!-- ===== HERO ===== -->
 <section class="hero" id="hero">
   <div class="hero-bg">
     <div class="glow g1"></div>
@@ -52,21 +52,26 @@
         <span class="ln gold-text">превосходства</span>
       </h1>
       <p class="hero-sub">
+        Шаблонный дизайн и медленный код делают бизнес <b>«невидимкой»</b>,
+        сливая до <b>50%</b> рекламного бюджета впустую.
+      </p>
+      <p class="pain">
         Мы создаём эксклюзивные сайты на чистом коде:
         скорость загрузки <b>&lt; 1 секунды</b> и уникальный премиум-дизайн.
         Превратите сайт в прибыльный актив.
-      </p>
-      <p class="pain">
         Шаблонный дизайн и медленный код делают бизнес «невидимкой»,
         сливая до 50% рекламного бюджета впустую.
       </p>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-gold">Обсудить проект <span class="arr">→</span></a>
-        <button class="btn btn-ghost" onclick="openGuide()">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
-          Получить гайд
-        </button>
-      </div>
+  <a href="#contact" class="btn btn-gold">Обсудить проект <span class="arr">→</span></a>
+  <div class="guide-cta">
+    <button class="btn btn-ghost" onclick="openGuide()">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+      Получить гайд
+    </button>
+    <span class="guide-caption">Гайд: как составить ТЗ</span>
+  </div>
+</div>
       <div class="hero-stats">
         <div class="stat">
           <div class="num gold-text">&lt;1с</div>
@@ -99,7 +104,7 @@
   </div>
 </section>
 
-<!-- why me -->
+<!-- ===== WHY US ===== -->
 <section class="why sec-pad" id="why">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -137,7 +142,7 @@
   </div>
 </section>
 
-<!-- servicces -->
+<!-- ===== SERVICES ===== -->
 <section class="sec-pad" id="services">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -163,9 +168,9 @@
         <ul class="svc-list">
           <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Проектирование и ТЗ</li>
           <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Индивидуальный UI/UX дизайн</li>
-          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Frontend-разработка (вёрстка)</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Интеграция Headless CMS (админка)</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Интеграция CRM (AmoCRM / Bitrix24)</li>
           <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Базовая техническая SEO-оптимизация</li>
-          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Настройка форм и аналитики</li>
         </ul>
         <div class="svc-foot">
           <span class="label">Под ключ</span>
@@ -187,8 +192,7 @@
           которые автоматизируют бизнес.</p>
         <ul class="svc-list">
           <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Telegram-бот для бизнеса</li>
-          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Интеграция Headless CMS (админка)</li>
-          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Интеграция CRM (AmoCRM / Bitrix24)</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Интеграции с другими системами</li>
           <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Сложная анимация и 3D (WebGL)</li>
           <li><span class="chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7"/></svg></span>Копирайтинг и контент</li>
         </ul>
@@ -229,7 +233,7 @@
 
     </div>
 
-    <!-- price -->
+    <!-- price strip -->
     <div class="price-strip reveal">
       <div class="ps-glow"></div>
       <div style="position:relative">
@@ -244,7 +248,7 @@
   </div>
 </section>
 
-<!-- process -->
+<!-- ===== PROCESS ===== -->
 <section class="process sec-pad" id="process">
   <div class="wrap proc-wrap">
     <div class="proc-side reveal">
@@ -304,7 +308,7 @@
   </div>
 </section>
 
-<!-- CTA -->
+<!-- ===== FINAL CTA ===== -->
 <section class="final">
   <div class="fglow"></div>
   <div class="wrap final-inner reveal">
@@ -319,7 +323,7 @@
   </div>
 </section>
 
-<!-- contact -->
+<!-- ===== CONTACT ===== -->
 <section class="contact sec-pad" id="contact">
   <div class="wrap contact-grid">
     <div class="contact-info reveal">
@@ -330,15 +334,15 @@
       <ul class="contact-list">
         <li>
           <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></div>
-          <div><div class="lbl">Telegram</div><div class="val">@amp_studio</div></div>
+          <div><div class="lbl">Telegram</div><div class="val">@Arut_AMP</div></div>
         </li>
         <li>
           <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg></div>
-          <div><div class="lbl">Email</div><div class="val">hello@amp-studio.ru</div></div>
+          <div><div class="lbl">Email</div><div class="val">amp.group@yandex.ru</div></div>
         </li>
         <li>
           <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c1 .3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg></div>
-          <div><div class="lbl">Телефон</div><div class="val">+7 (900) 000-00-00</div></div>
+          <div><div class="lbl">Телефон</div><div class="val">+7 (989) 277-79-33</div></div>
         </li>
       </ul>
     </div>
@@ -374,7 +378,7 @@
   </div>
 </section>
 
-<!-- price -->
+<!-- ===== FOOTER ===== -->
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -399,9 +403,9 @@
       </div>
       <div class="foot-col">
         <h4>Связь</h4>
-        <a href="#">@amp_studio</a>
-        <a href="#">hello@amp-studio.ru</a>
-        <a href="#">+7 (900) 000-00-00</a>
+        <a href="#">@Arut_AMP</a>
+        <a href="#">amp.group@yandex.ru</a>
+        <a href="#">+7 (989) 277-79-33</a>
       </div>
     </div>
     <div class="foot-bottom">
@@ -458,13 +462,13 @@
       А пока — специальное предложение лично для вас:</p>
     <div class="offer-box">
       <div class="o-tag">Спецпредложение</div>
-      <div class="o-price gold-text">5 000 ₽</div>
+      <div class="o-price gold-text">4 999 ₽</div>
       <div class="o-desc">Составим детальное техническое задание для вашего
         сайта. С готовым ТЗ можно пойти к любым разработчикам — и точно
         знать, за что вы платите.</div>
     </div>
     <button class="btn btn-gold" onclick="acceptOffer()">
-      Заказать ТЗ за 5 000 ₽ <span class="arr">→</span>
+      Заказать ТЗ за 4 999 ₽ <span class="arr">→</span>
     </button>
     <div class="modal-divider"></div>
     <button class="btn btn-ghost" style="width:100%;justify-content:center"
